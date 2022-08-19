@@ -46,7 +46,7 @@ const Slider = () => {
         </Carousel>
       </div>
 
-      <div className="badge absolute right-[15%] -bottom-20  ">
+      <div className="badge absolute right-[15%] -bottom-20 ">
         <img
           src="src/resources/misc/deforestation.svg"
           alt=""

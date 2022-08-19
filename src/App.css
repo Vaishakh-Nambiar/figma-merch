@@ -20,12 +20,15 @@ body {
   --ff-au: "Author", sans-serif;
 }
 
-.outline {
+/* .outline-red {
   outline: 2px solid red;
 }
-section {
+.ot-bl {
+  outline: 2px solid blue;
+} */
+/* section {
   height: 100vh;
-}
+} */
 
 .border {
   border-bottom: solid black 5px;
@@ -147,4 +150,13 @@ section {
 .badge:hover .high-five {
   transform: translate(0px);
   opacity: 1;
+}
+
+.btn {
+  transition: all 200ms;
+  cursor: pointer;
+}
+.btn:hover {
+  color: var(--white);
+  background-color: #000000;
 }

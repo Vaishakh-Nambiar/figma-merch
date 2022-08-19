@@ -14,7 +14,7 @@ const Hero = () => {
   }
 
   return (
-    <div>
+    <div className="my-6 py-6">
       <div className="headers text-black font-au p-8 mx-4 text-center my-6 flex flex-wrap">
         <h1 className="flex flex-wrap items-center justify-center">{line}</h1>
       </div>

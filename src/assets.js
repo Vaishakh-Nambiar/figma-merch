@@ -7,10 +7,10 @@ const products = [
     hover:
       "src/resources/products/rainbow logo tee/Figma-Store---Product-4381_1000x.jpg",
     images: [
+      "src/resources/products/rainbow logo tee/cover_img.jpg",
       "src/resources/products/rainbow logo tee/Figma-Store---Product-4381_1000x.jpg",
       "src/resources/products/rainbow logo tee/Figma-Store-1039_1000x.jpg",
       "src/resources/products/rainbow logo tee/Figma-Store-1096_1000x.jpg",
-      "src/resources/products/rainbow logo tee/Figma-Store-1108_1000x.jpg",
       "src/resources/products/rainbow logo tee/SizeGuide_LAApparelSSShirts_1_db9a6f40-30dd-4da9-b5c9-4941b38b670d_1000x.png",
     ],
     info: "If your entire wardrobe is black and at least one person in your life has told you to wear more color, this shirt is the compromise you've been waiting for.",
@@ -26,7 +26,7 @@ const products = [
       "src/resources/products/comments notebook/Figma-Store-091_1000x.png",
       "src/resources/products/comments notebook/Figma-Store-094-Edit_1000x.jpg",
       "src/resources/products/comments notebook/Figma-Store-3325_1000x.jpg",
-      "src/resources/products/commen/ts notebook/Figma-Store-3355_1000x.jpg",
+      "src/resources/products/comments notebook/Figma-Store-3355_1000x.jpg",
     ],
     info: "They say all great ideas start with a perfectly sized dot grid notebook. Who is “they” you ask? We’re really not sure, but we like to think they’re onto something.",
     extras: "7” x 9” spiral-bound dot grid notebook.",
@@ -39,9 +39,10 @@ const products = [
     hover:
       "src/resources/products/bezier logo tee/Figma-Store---Product-4369_1000x.jpg",
     images: [
+      "src/resources/products/bezier logo tee/cover_tee.jpg",
       "src/resources/products/bezier logo tee/Figma-Store---Product-4369_1000x.jpg",
       "src/resources/products/bezier logo tee/Figma-Store-4081_1000x.jpg",
-      "src/resources/products/bezier logo tee/Figma-Store-4103_1000x.jpg.jpg",
+      "src/resources/products/bezier logo tee/Figma-Store-4103_1000x.jpg",
       "src/resources/products/bezier logo tee/SizeGuide_LAApparelLSShirts_2_1000x.png",
     ],
     info: "“Make the logo bigger,” you say? Okay.",
@@ -54,11 +55,11 @@ const products = [
     cover: "src/resources/products/blue hat/cover_img.jpg",
     hover: "src/resources/products/blue hat/Figma-Store-134_1000x.png",
     images: [
-      "src/resources/products/blue hatFigma-Store-134_1000x.png",
-      "src/resources/products/blue hatFigma-Store-153-Edit_1000x.jpg",
-      "src/resources/products/blue hatFigma-Store-1982-Edit_1000x.jpg",
-      "src/resources/products/blue hatFigma-Store-2008_1000x.jpg",
-      "src/resources/products/blue hatFigma-Store-2052_1000x.jpg",
+      "src/resources/products/blue hat/cover_img.jpg",
+      "src/resources/products/blue hat/Figma-Store-134_1000x.png",
+      "src/resources/products/blue hat/Figma-Store-153-Edit_1000x.jpg",
+      "src/resources/products/blue hat/Figma-Store-1982-Edit_1000x.jpg",
+      "src/resources/products/blue hat/Figma-Store-2052_1000x.jpg",
     ],
     info: "One of our finest selections. A pop of color, and a little bit of fun. Well, this hat is just that and more.",
     extras:
@@ -71,10 +72,10 @@ const products = [
     cover: "src/resources/products/bottle/cover_img.jpg",
     hover: "src/resources/products/bottle/Figma-Store-157_1000x.jpg",
     images: [
-      "src/resources/products/bottleFigma-Store-630_1000x.jpg",
-      "src/resources/products/bottleFigma-Store-157_1000x.jpg",
-      "src/resources/products/bottleFigma-Store-649_1000x.jpg",
-      "src/resources/products/bottleFigma-Store-886_1000x.jpg",
+      "src/resources/products/bottle/cover_img.jpg",
+      "src/resources/products/bottle/Figma-Store-157_1000x.jpg",
+      "src/resources/products/bottle/Figma-Store-649_1000x.jpg",
+      "src/resources/products/bottle/Figma-Store-886_1000x.jpg",
     ],
     info: "The constraints don’t lie. Fill container to stay hydrated.",
     extras:
@@ -88,6 +89,7 @@ const products = [
     hover:
       "src/resources/products/cursor tote bag/FigmaStore_Tote-00000_1000x.jpg",
     images: [
+      "src/resources/products/cursor tote bag/cover_bag.jpg",
       "src/resources/products/cursor tote bag/FigmaStore_Tote-00000_1000x.jpg",
       "src/resources/products/cursor tote bag/FigmaStore_Tote-6_1000x.jpg",
       "src/resources/products/cursor tote bag/FigmaStore_Tote-00000_1000x.jpg",
