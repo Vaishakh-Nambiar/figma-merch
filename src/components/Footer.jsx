@@ -72,6 +72,9 @@ const Footer = () => {
         </p>
       </div>
 
+      <div className="marq text-black font-au  mx-4 text-center my-2 flex flex-wrap text-[12px] "></div>
+
+      {/* 
       <marquee
         className="relative flex overflow-x-hidden uppercase my-4"
         scrollamount="10"
@@ -83,8 +86,7 @@ const Footer = () => {
             {line}
           </h1>
         </div>
-        {/* {line} */}
-      </marquee>
+      </marquee> */}
     </footer>
   );
 };

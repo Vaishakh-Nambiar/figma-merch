@@ -26,8 +26,10 @@ body {
 section {
   height: 100vh;
 }
+
 .border {
   border-bottom: solid black 5px;
+  border-top: yellow;
 }
 
 .figure {
@@ -116,4 +118,33 @@ section {
   margin-left: 0px !important;
 }
 
-/* slider */
+.rotate {
+  animation: rotation 5s infinite linear forwards;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.badge,
+.high-five {
+  cursor: pointer;
+  transition: all 250ms;
+}
+.hand {
+  transform: translate(10px);
+  transition: all 250ms;
+}
+.high-five {
+  opacity: 0;
+}
+.badge:hover .hand {
+  transform: translate(-1px);
+}
+.badge:hover .high-five {
+  transform: translate(0px);
+  opacity: 1;
+}
