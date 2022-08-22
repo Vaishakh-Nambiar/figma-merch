@@ -1,7 +1,7 @@
 import React from "react";
 import { products, symbols } from "../assets";
 import Cards from "./Cards";
-
+import { Link } from "react-router-dom";
 const Hero = () => {
   const text =
     "FIGMA'S COLLECTION OF LAYERS AND COMPONENTS FOR YOU AND YOUR FRIENDS";
@@ -23,13 +23,15 @@ const Hero = () => {
           {products.map((p, i) => {
             const { name, cover, price, hover } = p;
             return (
-              <Cards
-                name={name}
-                cover={cover}
-                price={price}
-                id={i}
-                hover={hover}
-              />
+              <Link to="/product" className="text-black hover:text-black">
+                <Cards
+                  name={name}
+                  cover={cover}
+                  price={price}
+                  id={i}
+                  hover={hover}
+                />
+              </Link>
             );
           })}
         </div>
