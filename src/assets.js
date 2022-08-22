@@ -250,7 +250,7 @@ const products = [
   },
 ];
 const about = {
-  img: ".src/resources/about_cover.jpg",
+  img: "src/resources/about_hex.jpg",
   aboutInfo:
     "Welcome to the Figma Store, a collection of Figma apparel (layers) and accessories (components) designed for our community.",
   misc: {
@@ -308,6 +308,7 @@ const about = {
 //
 const symbols = [
   "src/resources/misc/word-symbol-burst.static.svg",
+  "src/resources/misc/word-symbol-snake.static.svg",
   "src/resources/misc/word-symbol-comet.static.svg",
   "src/resources/misc/word-symbol-hourglass.static.svg",
   "src/resources/misc/word-symbol-dots.static.svg",
@@ -317,7 +318,6 @@ const symbols = [
   "src/resources/misc/word-symbol-zag.static.svg",
   "src/resources/misc/word-symbol-sun.static.svg",
   "src/resources/misc/word-symbol-zag.static.svg",
-  "src/resources/misc/word-symbol-snake.static.svg",
 ];
 
 const footer = [

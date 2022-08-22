@@ -5,6 +5,8 @@ import Slider from "./components/Slider";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Page from "./components/Page";
+import Cart from "./components/Cart";
+import About from "./components/About";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Hero />
       <Footer />
       {/* <Page /> */}
+      {/* <Cart /> */}
+      {/* <About /> */}
     </main>
   );
 }

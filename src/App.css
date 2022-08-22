@@ -6,6 +6,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 body {
   overflow-x: hidden;
 }
@@ -20,7 +21,8 @@ body {
   --ff-au: "Author", sans-serif;
 }
 
-/* .outline-red {
+/* 
+.outline-red {
   outline: 2px solid red;
 }
 .ot-bl {
@@ -159,4 +161,37 @@ body {
 .btn:hover {
   color: var(--white);
   background-color: #000000;
+}
+/*  */
+th {
+  padding: 10px;
+  /* width: 100%; */
+  border-bottom: 2px solid black;
+}
+
+.itemCart {
+  transition: all 250ms;
+}
+
+.deleteBtn {
+  display: none;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.itemCart:hover .deleteBtn {
+  display: block;
+}
+.header-title,
+.header {
+  font-family: var(--ff-au);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.header-title {
+  font-size: 56px;
+}
+.header {
+  font-size: 32px;
 }

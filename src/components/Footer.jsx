@@ -12,7 +12,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-yellow text-black font-au px-6  max-w-full">
+    <footer className="bg-yellow text-black font-au px-6 max-w-full">
       <div className="relative max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 lg:pt-24">
         <div className="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8">
           <a
@@ -72,7 +72,7 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="marq text-black font-au  mx-4 text-center my-2 flex flex-wrap text-[12px] "></div>
+      {/* <div className="marq text-black font-au  mx-4 text-center my-2 flex flex-wrap text-[12px] "></div> */}
 
       {/* 
       <marquee
