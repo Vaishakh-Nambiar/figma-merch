@@ -1,11 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { products, symbols } from "../assets";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Table from "./Table";
 import Buttons from "./Buttons";
 
+import ThemeContext from "../themeContext";
+
 const Cart = ({ obj }) => {
+  const value = useContext(ThemeContext);
+  console.log(value);
+
   // const item=[products[3],products[0]]
 
   const [items, setItems] = useState([products[3]]);

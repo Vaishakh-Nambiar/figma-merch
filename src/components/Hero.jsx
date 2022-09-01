@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { products, symbols } from "../assets";
 import Cards from "./Cards";
 import { Link } from "react-router-dom";
+import ThemeContext from "../themeContext";
+
 const Hero = () => {
+  const value = useContext(ThemeContext);
+  const { setActiveProduct } = value;
+
   const text =
     "FIGMA'S COLLECTION OF LAYERS AND COMPONENTS FOR YOU AND YOUR FRIENDS";
 
@@ -21,17 +26,31 @@ const Hero = () => {
       <main className=" h-full py-[100px] px-6  flex flex-col justify-between my-8">
         <div className="flex-container flex flex-wrap items-center justify-center py-4 ">
           {products.map((p, i) => {
+            function addToCart(e) {
+              const { name, cover, price, hover } = e.target;
+              console.log(name, cover, price, hover);
+
+              setActiveProduct((prev) => {
+                return {
+                  [name]: name,
+                  [cover]: cover,
+                  [price]: price,
+                  [hover]: hover,
+                };
+              });
+            }
+
             const { name, cover, price, hover } = p;
             return (
-              <Link to="/product" className="text-black hover:text-black">
-                <Cards
-                  name={name}
-                  cover={cover}
-                  price={price}
-                  id={i}
-                  hover={hover}
-                />
-              </Link>
+              // <Link to="/product" className="text-black hover:text-black">
+              // {/* </Link> */}
+              <Cards
+                name={name}
+                cover={cover}
+                price={price}
+                id={i}
+                hover={hover}
+              />
             );
           })}
         </div>

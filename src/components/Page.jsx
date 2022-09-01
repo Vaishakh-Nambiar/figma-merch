@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Nav from "./Nav";
 import Buttons from "./Buttons";
 import { products } from "../assets";
+
+import ThemeContext from "../themeContext";
 // import "../App.css";
 
 const Page = ({ obj }) => {
+  const value = useContext(ThemeContext);
+  const { activeProduct } = value;
+
+  console.log(activeProduct);
+
   const sizes = ["xs", "s", "m", "l", "xl", "2xl"];
 
   const { type, name, images, info, extras, price } = products[0];
