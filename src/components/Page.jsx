@@ -3,14 +3,10 @@ import Nav from "./Nav";
 import Buttons from "./Buttons";
 import { products } from "../assets";
 
-import ThemeContext from "../themeContext";
-// import "../App.css";
+import "../App.css";
 
 const Page = ({ obj }) => {
-  const value = useContext(ThemeContext);
-  const { activeProduct } = value;
-
-  console.log(activeProduct);
+  console.log("obj: ", obj);
 
   const sizes = ["xs", "s", "m", "l", "xl", "2xl"];
 
@@ -46,7 +42,7 @@ const Page = ({ obj }) => {
                 >
                   <img
                     src={image}
-                    key={i}
+                    key={image}
                     className=" h-[90px] w-[90px] object-cover"
                   />
                 </div>
@@ -56,6 +52,7 @@ const Page = ({ obj }) => {
           <div className="img-disp basis-3/4 p-6 ">
             <div className="rounded-[100px] outline-red overflow-hidden h-[100%] flex items-center justify-center ">
               <img
+                key={activeImg}
                 src={images[activeImg]}
                 alt=""
                 className="outline-red h-full"

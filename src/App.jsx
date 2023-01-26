@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import "./App.css";
 import Nav from "./components/Nav";
@@ -8,10 +8,10 @@ import Footer from "./components/Footer";
 import Page from "./components/Page";
 import Cart from "./components/Cart";
 import About from "./components/About";
+import { ThemeContext, ThemeProvider } from "./ThemeContext";
 
-function App() {
-  const value = useContext(ThemeContext);
-
+function App({ test }) {
+  // <ThemeProvider>
   return (
     <main className="App w-full h-full overflow-x-hidden">
       <div className="parent outline flex flex-col w-full bg-yellow">
@@ -27,6 +27,9 @@ function App() {
       {/* <About /> */}
     </main>
   );
+  {
+    /* </ThemeProvider> */
+  }
 }
 
 export default App;

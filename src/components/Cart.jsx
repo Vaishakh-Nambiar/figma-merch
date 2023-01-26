@@ -4,18 +4,19 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Table from "./Table";
 import Buttons from "./Buttons";
-
-import ThemeContext from "../themeContext";
+import { ThemeContext, ThemeProvider } from "../ThemeContext";
 
 const Cart = ({ obj }) => {
-  const value = useContext(ThemeContext);
-  console.log(value);
-
   // const item=[products[3],products[0]]
+
+  const value = useContext(ThemeContext);
+
+  console.log("items in cart :", value);
 
   const [items, setItems] = useState([products[3]]);
 
   const { name, hover, price } = products[3];
+
   const [count, setCount] = useState(1);
   const [finalTotal, setBill] = useState(0);
 
