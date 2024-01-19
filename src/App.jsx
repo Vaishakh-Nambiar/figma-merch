@@ -8,16 +8,17 @@ import Footer from "./components/Footer";
 import Page from "./components/Page";
 import Cart from "./components/Cart";
 import About from "./components/About";
-import { ThemeContext, ThemeProvider } from "./ThemeContext";
+// import { ThemeContext, ThemeProvider } from "./ThemeContext";
 
 function App({ test }) {
   // <ThemeProvider>
   return (
-    <main className="App w-full h-full overflow-x-hidden">
+    // <main className="App w-full h-full overflow-x-hidden bg-yellow">
+    <main className="App w-full h-full overflow-x-hidden ">
       <div className="parent outline flex flex-col w-full bg-yellow">
         <Nav />
       </div>
-      <section className="bg-yellow border ">
+      <section className="bg-yellow border  ">
         <Slider />
       </section>
       <Hero />

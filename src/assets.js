@@ -349,7 +349,7 @@ const sliderImg = [
     img: "src/resources/products/slider/Rectangle 2.png",
   },
   {
-    title: "Bottles and tumblers",
+    title: "Tumblers",
     img: "src/resources/products/slider/Ellipse 2.png",
   },
   {

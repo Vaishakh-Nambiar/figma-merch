@@ -1,12 +1,13 @@
 import React, { useContext, useState } from "react";
 import Nav from "./Nav";
 import Buttons from "./Buttons";
+import Footer from "./Footer";
 import { products } from "../assets";
 
 import "../App.css";
 
 const Page = ({ obj }) => {
-  console.log("obj: ", obj);
+  // console.log("obj: ", obj);
 
   const sizes = ["xs", "s", "m", "l", "xl", "2xl"];
 
@@ -29,8 +30,8 @@ const Page = ({ obj }) => {
       <div className="w-screen">
         <Nav />
       </div>
-      <section className="outline-red p-8  flex ">
-        <div className="image-section basis-1/2 outline-red flex justify-center">
+      <section className="outline-red p-8  flex text-black ">
+        <div className="image-section basis-1/2 outline-red flex justify-center text-black">
           <div className="img-gal outline-red p-6 flex flex-col items-center justify-start">
             {images.map((image, i) => {
               return (
@@ -65,21 +66,21 @@ const Page = ({ obj }) => {
           <div className="h-[75%] ot-bl flex flex-col justify-evenly">
             <div className="mx-2">
               <div
-                className={`type outline-red px-4 py-1 uppercase text-[20px] font-semibold rounded-full ${
+                className={`type outline-red px-4 py-1 uppercase text-[20px] font-semibold rounded-full  ${
                   type === "layers" ? `bg-green` : `bg-yellow`
                 } border-solid border-black border-2 w-fit`}
               >
                 {type}
               </div>
             </div>
-            <h1 className="name outline-red p-2 capitalize">{name}</h1>
+            <h1 className="name outline-red p-2 capitalize ">{name}</h1>
             <div className="size-range outline-red p-2 flex">
               {type === "layers" &&
                 sizes.map((s, i) => {
                   return (
                     <div className="">
                       <div
-                        className="rounded-full h-[50px] w-[50px] text-center flex items-center justify-center  text-black border-black border-2 border-solid mx-2 p-4 uppercase font-semibold text-[18px] btn"
+                        className="rounded-full h-[50px] w-[50px] text-center flex items-center justify-center  text-black border-black border-2 border-solid mx-2 p-4 uppercase font-semibold text-[18px] ot-red btn"
                         key={`_${i}`}
                       >
                         {s}
@@ -90,7 +91,7 @@ const Page = ({ obj }) => {
             </div>
             <div className="counter outline-red p-4 flex items-center w-max justify-between">
               <div
-                className="rounded-full h-[60px] w-[60px] p-4 flex items-center justify-center border-2 border-black border-solid text-[24px] btn"
+                className="rounded-full h-[60px] w-[60px] p-4 flex items-center justify-center border-2 border-black border-solid text-[24px]  btn"
                 onClick={() => {
                   setCount((prev) => (prev > 1 ? prev - 1 : 1));
                 }}
@@ -119,6 +120,7 @@ const Page = ({ obj }) => {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };

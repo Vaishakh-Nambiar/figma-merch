@@ -14,7 +14,7 @@ const Slider = () => {
           className={`item w-[100%] h-[100%]  cursor-grabbing image-main `}
         />
         <div className="flex items-center justify-center image-hover-title p-4  bg-white z-30 cursor-pointer text-black ">
-          <span className="bg-white text-[40px] px-6 py-4 rounded-full font-au font-semibold uppercase border-solid border-black border-4 flex items-center justify-center  flex-wrap">
+          <span className="bg-white text-[40px] px-6 py-4 rounded-full font-au font-semibold uppercase border-solid border-black border-4 flex items-center justify-center sflex-wrap">
             {title}
           </span>
         </div>
@@ -37,7 +37,7 @@ const Slider = () => {
 
   return (
     <main className="py-4 bg-yellow relative ">
-      <div className="container h-[80%] overflow-x-hidden ">
+      <div className="container h-[90%] overflow-x-hidden  ">
         <Carousel _data={images} {...setting}>
           {images.map((i, _i) => (
             <div key={_i} className="item " style={{ ...itemStyle }}>
