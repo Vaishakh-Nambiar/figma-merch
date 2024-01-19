@@ -4,7 +4,6 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import Table from "./Table";
 import Buttons from "./Buttons";
-import { ThemeContext, ThemeProvider } from "../ThemeContext";
 
 const Cart = ({ obj }) => {
   // const item=[products[3],products[0]]
