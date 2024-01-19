@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Page from "./components/Page";
 import Cart from "./components/Cart";
 import About from "./components/About";
+// import About from "../public/resources";
 // import About from "../src/";
 // import { ThemeContext, ThemeProvider } from "./ThemeContext";
 

@@ -16,7 +16,7 @@ function Nav() {
         </Link>
       </div>
       <h1 className="title ">
-        <img src="src/resources/misc/logo-full.static.svg" />
+        <img src="../public/resources/misc/logo-full.static.svg" />
       </h1>
       <div className=" flex">
         <Link to="/cart" className="text-black">
