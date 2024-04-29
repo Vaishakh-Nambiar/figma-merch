@@ -8,9 +8,9 @@ import Buttons from "./Buttons";
 const Cart = ({ obj }) => {
   // const item=[products[3],products[0]]
 
-  const value = useContext(ThemeContext);
+  // const value = useContext(ThemeContext);
 
-  console.log("items in cart :", value);
+  // console.log("items in cart :", value);
 
   const [items, setItems] = useState([products[3]]);
 
