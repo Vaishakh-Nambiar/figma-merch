@@ -16,7 +16,8 @@ function Nav() {
         </Link>
       </div>
       <h1 className="title items-center">
-        <img src="../public/resources/misc/logo-full.static.svg" />
+        <img src="../resources/misc/logo-full.static.svg" />
+        {/* <img src="../public/resources/misc/logo-full.static.svg" /> */}
         {/* <img src="src/assets/logo-full.static.svg" /> */}
       </h1>
       <div className="hidden md:block">
